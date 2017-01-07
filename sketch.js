@@ -4,7 +4,6 @@ var tree = [];
 var count = 0;
 var leaves = [];
 var canv;
-var btns = [];
 var clr = '#ffffff';
 
 function setup() {
