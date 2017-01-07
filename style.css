@@ -1,0 +1,34 @@
+#rd {
+  background: red;
+  color: white;
+  padding: 5px 35px 5px 35px;
+  margin-top: 5px;
+
+}
+#grn {
+  background: green;
+  color: white;
+  padding: 5px 35px 5px 35px;
+  margin-top: 5px;
+
+}
+#yellow {
+  background: yellow;
+  color: white;
+  padding: 5px 35px 5px 35px;
+  margin-top: 5px;
+
+}
+#blu {
+  background: blue;
+  color: white;
+  padding: 5px 35px 5px 35px;
+  margin-top: 5px;
+}
+#orng {
+  background: orange;
+  color: white;
+  padding: 5px 35px 5px 35px;
+  margin-top: 5px;
+  margin-left: 5px;
+}

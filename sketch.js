@@ -3,13 +3,16 @@ var branch;
 var tree = [];
 var count = 0;
 var leaves = [];
-
+var canv;
+var btns = [];
 function setup() {
-    createCanvas(600, 600);
+    canv = createCanvas(600, 600);
+    canv.parent('holding');
     var a = createVector(width / 2, height);
     var b = createVector(width / 2, height - len);
     branch = new Branch(a, b);
     tree[0] = branch;
+    
 }
 
 
@@ -20,7 +23,6 @@ function draw() {
     }
     if (count == 6) {
         for (var i = 0; i < leaves.length; i++) {
-            fill(255, 0, 100, 100);
             noStroke();
             ellipse(leaves[i].x, leaves[i].y, 8, 8);
         }
@@ -48,4 +50,8 @@ function keyPressed() {
         }
 
     }
+}
+
+function pickColor() {
+
 }
