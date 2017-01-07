@@ -8,24 +8,27 @@
     <!--<script language="javascript" src="libraries/p5.sound.js"></script>-->
     <script language="javascript" type="text/javascript" src="sketch.js"></script>
     <script language="javascript" type="text/javascript" src="branch.js"></script>
+
     <!-- this line removes any default padding and style. you might only need one of these values set. -->
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div id="holding"></div>
-  <div class="bs">
-    <button id="orng" type = "button" class = "btn btn-default btn-lg">orange</button>
-    <button id="rd" type = "button" class = "btn btn-defualt btn-lg">red</button>
-    <button id="blu" type = "button" class = "btn btn-defualt btn-lg">blue</button>
-    <button id="yellow" type = "button" class = "btn btn-defualt btn-lg">yellow</button>
-    <button id="grn" type = "button" class = "btn btn-defualt btn-lg">green</button>
-  </div>
+    <div id="holding"></div>
+    <div class="bs">
+        <button id="orng" type="button" value="#FFA500" onclick="reply_click(this.id)" class="btn btn-default btn-lg">orange</button>
+        <button id="rd" type="button" value="#F00" onclick="reply_click(this.id)" class="btn btn-defualt btn-lg">red</button>
+        <button id="blu" type="button" value="#00F" onclick="reply_click(this.id)" class="btn btn-defualt btn-lg">blue</button>
+        <button id="yellow" type="button" value="#FF0" onclick="reply_click(this.id)" class="btn btn-defualt btn-lg">yellow</button>
+        <button id="grn" type="button" value="#0F0" onclick="reply_click(this.id)" class="btn btn-defualt btn-lg">green</button>
+    </div>
 
 </body>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </html>

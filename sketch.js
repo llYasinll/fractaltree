@@ -5,14 +5,24 @@ var count = 0;
 var leaves = [];
 var canv;
 var btns = [];
+var clr = '#ffffff';
 function setup() {
     canv = createCanvas(600, 600);
     canv.parent('holding');
     var a = createVector(width / 2, height);
     var b = createVector(width / 2, height - len);
     branch = new Branch(a, b);
+    var Btn = document.getElementById('orng');
+    btns.push(Btn);
+    Btn = document.getElementById('rd');
+    btns.push(Btn);
+    Btn = document.getElementById('blu');
+    btns.push(Btn);
+    Btn = document.getElementById('yellow');
+    btns.push(Btn);
+    Btn = document.getElementById('grn');
+    btns.push(Btn);
     tree[0] = branch;
-    
 }
 
 
@@ -24,7 +34,9 @@ function draw() {
     if (count == 6) {
         for (var i = 0; i < leaves.length; i++) {
             noStroke();
+            fill(clr);
             ellipse(leaves[i].x, leaves[i].y, 8, 8);
+
         }
     }
 }
@@ -52,6 +64,13 @@ function keyPressed() {
     }
 }
 
-function pickColor() {
+function reply_click(click) {
+  for (var i = 0; i < btns.length; i++) {
+    if(btns[i].id === click){
 
-}
+      clr = btns[i].value;
+
+    }
+  }
+
+    }
